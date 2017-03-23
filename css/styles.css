@@ -7,6 +7,24 @@ header {
   justify-content: center;
 }
 
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: solid thin; 
+}
+
+h4 {
+    text-transform: uppercase;
+    padding: 0 40px;
+    margin: none;
+    border: none;
+    text-align: center;
+    
+}
+
 /* Gallery Styling */
 .gallery{
     display: flex;
@@ -19,11 +37,16 @@ figure img {
 }
 
 figure{
-    padding: 025px;
+    padding: 25px;
     width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+figcaption {
+    padding: 25px;
+    text-align: center;
 }
 
 .lg-backdrop {
@@ -31,7 +54,7 @@ figure{
 }
 
 .lg-image {
-    box-shadow: 0 0 30px #333;
+    box-shadow: 0 0 10px gray;
 }
 
 /* Captions*/
@@ -59,11 +82,6 @@ MEDIA QUERIES
 
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 80em) { 
-  
-  /* Diagnostic Styling. */
-  body {
-       background: blue;
-  }
 
     
 figure{
@@ -73,6 +91,12 @@ figure{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+    
+figcaption {
+    padding: none;
+    text-align: left;
+}
+
 img {
         width: 50%;
     }
