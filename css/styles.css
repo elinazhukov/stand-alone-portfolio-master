@@ -71,12 +71,18 @@ MEDIA QUERIES
     figure{
         width: 100%
     }
+    caption {
+    display: none;
+}
   
 }
 
+
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 48em)  {
-
+caption {
+    display: none;
+}
    
 }
 
@@ -106,4 +112,7 @@ img {
     margin: auto;
     width: 90%;
     }
+    caption {
+    display: none;
+}
 }
