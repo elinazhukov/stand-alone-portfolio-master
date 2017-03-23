@@ -1,0 +1,85 @@
+/*My Styles*/
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+/* Gallery Styling */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure img {
+    width: 350px;
+    align-self: center;
+}
+
+figure{
+    padding: 025px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lg-backdrop {
+    background: white;
+}
+
+.lg-image {
+    box-shadow: 0 0 30px #333;
+}
+
+/* Captions*/
+caption {
+    display: none;
+}
+
+/********************
+MEDIA QUERIES
+*******************/
+/* Mobile: 320px = 20em */
+@media screen and (min-width: 20em) { 
+   
+    figure{
+        width: 100%
+    }
+  
+}
+
+/* Tablet:  768px = 160em */
+@media screen and (min-width: 48em)  {
+
+   
+}
+
+/* Desktop: 1280px = 80em */
+@media screen and (min-width: 80em) { 
+  
+  /* Diagnostic Styling. */
+  body {
+       background: blue;
+  }
+
+    
+figure{
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+img {
+        width: 50%;
+    }
+
+/* Main Container */
+    main {
+    margin: auto;
+    width: 90%;
+    }
+}
